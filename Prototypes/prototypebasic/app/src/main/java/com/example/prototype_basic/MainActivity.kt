@@ -11,6 +11,5 @@ class MainActivity : AppCompatActivity() {
         val tasks = mutableListOf<String>("task 1", "task 2")
         // to upgrade to API 33.
 
-
     }
 }
