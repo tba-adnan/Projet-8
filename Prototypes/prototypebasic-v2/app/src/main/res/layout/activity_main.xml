@@ -17,12 +17,14 @@
         android:id="@+id/newAffirmationEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter a new affirmation" />
+        android:layout_marginTop="260dp"
+        android:hint="Ajouter une tâche" />
 
     <Button
         android:id="@+id/MainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
         android:text="Add" />
 
 
