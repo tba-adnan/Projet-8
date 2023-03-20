@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="affirmations">affirmations</string-array>
+    <string-array name="demo_task">task 1</string-array>
 </resources>

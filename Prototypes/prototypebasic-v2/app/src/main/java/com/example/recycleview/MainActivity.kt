@@ -15,17 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         val myDataset = Datasource().loadAffirmations()
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-        recyclerView.adapter = ItemAdapter(this, myDataset)
+        recyclerView.adapter = ItemAdapter(this, myDataset.toTypedArray())
         recyclerView.setHasFixedSize(true)
         val addAffirmationButton = findViewById<Button>(R.id.MainButton)
 
         addAffirmationButton.setOnClickListener {
-            val affirmations = resources.getStringArray(R.array.affirmations)
-            val newAffirmation = "This is a new affirmation"
+            val affirmations = resources.getStringArray(R.array.demo_task)
+            val newAffirmation = "demo affirmation"
             val newAffirmationsList = affirmations.toMutableList()
             newAffirmationsList.add(newAffirmation)
             val newAffirmationsArray = newAffirmationsList.toTypedArray()
-            resources.getStringArray(R.array.affirmations).copyInto(newAffirmationsArray)
+            resources.getStringArray(R.array.demo_task).copyInto(newAffirmationsArray)
 
 
 

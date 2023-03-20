@@ -11,8 +11,10 @@ import com.example.recycleview.model.Affirmation
 
 class ItemAdapter(
     private val context: Context,
-    private val dataset: List<Affirmation>
-) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+    private val main_dataset: Array<Affirmation>,
+    private val dataset: List<Affirmation> = main_dataset.toList(),
+
+    ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
